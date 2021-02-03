@@ -1,4 +1,10 @@
 //Wrap code in an IIFE
+const all = document.querySelector('#all')
+
+all.onclick = (event) => {
+  console.log(event.target.dataset.num)
+}
+
 (function(){
   
   let screen = document.querySelector('.screen');
